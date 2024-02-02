@@ -2,14 +2,14 @@
  indicate why you made the addition/change and/or the specific accessibility
  issue you are trying to address --> 
 
-<html>
+<html lang="en"> <!--Added language to the document-->
 <head>
     <title>Services - RoboCare</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-	    <img src="images/banner.png" width="400px">
+	    <img src="images/banner.png" width="400px" alt="Robocare slogan banner showing a robot and tools"> <!--Added alt text to image-->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -43,9 +43,9 @@
     <h2>Contact Us for More</h2>
     <p>For inquiries, email us at: <a href="mailto:contact@robocare.org">contact@robocare.org</a></p>
     
-    <div onclick="location.href='index.html';" style="color: blue; cursor: pointer;">Back to Home</div>
+    <a href='index.html' >Back to Home</a> <!--Changed the button to link because it takes us to another page. Also removed onclick="location..." to make it accessible with keyboard. Removed style to use default css style-->
     <footer>
-        <p><img src="images/unscrupulous.png" width="50px">© 2024 Unscrupulous Web Design</p>
+        <p><img src="images/unscrupulous.png" width="50px" alt="Unscrupulous Web Design logo">© 2024 Unscrupulous Web Design</p> <!--Added alt text to image-->
     </footer>
 
 </body>
