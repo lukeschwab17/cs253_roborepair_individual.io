@@ -2,54 +2,57 @@
  indicate why you made the addition/change and/or the specific accessibility
  issue you are trying to address --> 
 
-<html>
-<head>
-    <title>RoboCare - Spare Parts</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-	    <img src="images/banner.png" width="400px">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Our Catalog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div>
-
-        <h2>Welcome to RoboCare</h2>
-        <p>Providing spare parts for retired robots.</p>
-
-	<h3>Welcome to RoboCare</h3>
-	At RoboCare, we specialize in breathing new life into retired robots. Our mission is to provide high-quality spare parts for a variety of robot models, ensuring they continue to function effectively and efficiently, long after their standard service period has ended.
-	<h5>Our Journey</h5>
-	Founded in 2020 by a group of robotics enthusiasts and engineers, RoboCare started as a small workshop dedicated to the restoration and maintenance of classic robot models. We quickly realized that many robot owners faced challenges in finding parts and technical support for their retired mechanical companions. This inspired us to expand our services, and today, we are proud to be the leading provider of spare parts for retired robots.
-	<h3>What We Offer</h3>
-	<img src="images/needparts.png" width="400px">
-	From gears and circuits to sensors and power units, our extensive catalog includes everything needed to keep your robot in top shape. We source our parts from trusted manufacturers and also specialize in custom-made components, tailored to the unique needs of each robot.
-	<h3>A Community of Robot Enthusiasts</h3>
-	RoboCare is more than just a parts supplier; we are a community. We host workshops, training sessions, and meet-ups for robot enthusiasts to share their passion, knowledge, and stories. Our online forum is a bustling hub where members can seek advice, exchange tips, and connect with fellow robot lovers.
-	<h5>Looking to the Future</h5>
-	As technology advances, so do we. We are committed to staying at the forefront of robotic innovations, ensuring that we can meet the evolving needs of robots and their owners. At RoboCare, we don't just provide parts; we keep memories operational and ensure that every robot can have a prolonged, purposeful existence.
-	<h5>Join Us</h5>
-	Whether you're looking to repair a cherished family robot, find a rare component for your collection, or simply share your passion for robotics, RoboCare is here for you. Explore our website to learn more about our products and services, and become a part of our growing community.
-			
-			
-        <a href="services.html" style="color: grey;">Our Catalog</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <form>
-        <input type="email" name="email">
-        <input type="submit" value="Subscribe">
-    </form>
-
-    <footer>
-        <p><img src="images/unscrupulous.png" width="50px">© 2024 Unscrupulous Web Design</p>
-    </footer>
-</body>
-</html>
+ <html>
+    <head>
+        <title>RoboCare - Spare Parts</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/banner.png" width="400px" alt="RobCare Banner"> <!--Added image alternative text-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Our Catalog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="description"> <!--added description class to seperate navigation hyperlinks and body hyperlinks (different colors)-->
+    
+            <h2>Welcome to RoboCare</h2>
+            <p>Providing spare parts for retired robots.</p>
+    
+        <h3>Welcome to RoboCare</h3>
+        At RoboCare, we specialize in breathing new life into retired robots. Our mission is to provide high-quality spare parts for a variety of robot models, ensuring they continue to function effectively and efficiently, long after their standard service period has ended.
+        <h5>Our Journey</h5>
+        Founded in 2020 by a group of robotics enthusiasts and engineers, RoboCare started as a small workshop dedicated to the restoration and maintenance of classic robot models. We quickly realized that many robot owners faced challenges in finding parts and technical support for their retired mechanical companions. This inspired us to expand our services, and today, we are proud to be the leading provider of spare parts for retired robots.
+        <h3>What We Offer</h3>
+        <img src="images/needparts.png" width="400px" alt="Robot Needing Parts"> <!--Added image alternative text-->
+        From gears and circuits to sensors and power units, our extensive catalog includes everything needed to keep your robot in top shape. We source our parts from trusted manufacturers and also specialize in custom-made components, tailored to the unique needs of each robot.
+        <h3>A Community of Robot Enthusiasts</h3>
+        RoboCare is more than just a parts supplier; we are a community. We host workshops, training sessions, and meet-ups for robot enthusiasts to share their passion, knowledge, and stories. Our online forum is a bustling hub where members can seek advice, exchange tips, and connect with fellow robot lovers.
+        <h5>Looking to the Future</h5>
+        As technology advances, so do we. We are committed to staying at the forefront of robotic innovations, ensuring that we can meet the evolving needs of robots and their owners. At RoboCare, we don't just provide parts; we keep memories operational and ensure that every robot can have a prolonged, purposeful existence.
+        <h5>Join Us</h5>
+        Whether you're looking to repair a cherished family robot, find a rare component for your collection, or simply share your passion for robotics, RoboCare is here for you. Explore our website to learn more about our products and services, and become a part of our growing community.
+                
+                
+            <a href="services.html">Our Catalog</a> <!--Removed inline styling. Now uses good contrat CSS styling-->
+            <a href="contact.html">Contact</a>
+        </div>
+    
+        <form>
+            <label hidden="hidden" for="email">Email Submission:</label> <!--Added invisible label for email input. Useful for screen readers-->
+            <input type="email" name="email" id="firstname">
+            <label hidden="hidden" for="email">Email Submission:</label>
+            <input type="submit" value="Subscribe">
+        </form>
+    
+        <footer>
+            <p><img src="images/unscrupulous.png" width="50px" alt="Unscrupulous Web Design">© 2024 Unscrupulous Web Design</p> <!--Added image alternative text-->
+        </footer>
+    </body>
+    </html>
+    

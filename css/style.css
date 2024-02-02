@@ -4,7 +4,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #999; /* Poor contrast */
+    color: #2a2c2f; /* Changed font color for increased contrast */
     background-color: #ccc;
 	border: solid 5px;
 	margin: 100px;
@@ -13,19 +13,27 @@ body {
 header {
 	text-align: center;
 	background-color: #333;
-	color: white;
+	color: white; /* Changed color to white for increased contrast */
 	padding: 10px 0;
 }
 h1 {
-    font-size: 1em; /* Small font size for headings */
+    font-size: 2rem; /* Increased font size for headers */
 }
 
-a {
-    color: #999; /* Poor link contrast */
+header > nav > ul > li > a { /*New ruleset for navigation links hover color (increased contrast)*/
+    color: white;
+    font-size: 1.5rem; /* increased font size for navigation hyperlinks */
+}
+
+header > nav > ul > li > a:hover { /*New ruleset for navigation links hover color (increased contrast)*/
+    color: lightgrey;
+}
+.descripion > a { /*added description class to seperate navigation hyperlinks and body hyperlinks (different colors)*/
+    color: #11008e; /* Changed color to dark blue for increased contrast */
 }
 
 a:hover {
-    color: #ccc; /* Even lower contrast on hover */
+    color: black; /* Changed color on hovor to black for increased contrast */
 }
 
 form {
@@ -33,14 +41,15 @@ form {
 }
 
 input[type="submit"] {
-    background-color: lightgrey;
-    color: white;
-    border: none;
+    background-color: black; /* changed color to black for increased contrast */
+    color: white; /* changed color to white for increased contrast */
+    border: 1pt;
+    border-color: black;
 }
 
 button {
     cursor: pointer;
-    font-size: 0.8em; /* Small font size */
+    font-size: 1.2rem; /* Increased font size for general text */
 }
 
 /* Missing focus styles for interactive elements */
