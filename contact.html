@@ -2,7 +2,8 @@
  indicate why you made the addition/change and/or the specific accessibility
  issue you are trying to address --> 
 
-<html>
+<html lang="en">
+<!-- Added language to the HTML document -->
 
 <head>
     <title>Contact - RoboCare</title>
@@ -24,9 +25,13 @@
     <p>For any questions, please fill out the form below:</p>
 
     <form>
-        Name: <input type="text" name="name"><br>
-        Email: <input type="text" name="email"><br>
-        Message: <textarea name="message"></textarea><br>
+        <label for="name"> Name: </label>
+        <input type="text" id="name" name="name" placeholder="Input your name"> <br>
+        <label for="email">   Email: </label>
+        <input type="text" id="email" name="email" placeholder="Input your email"> <br>
+        <label for="message"> Message: </label>
+        <textarea name="message" id="message" placeholder="Type your message here"></textarea> <br>
+        <!-- Added label tags to all of the forms -->
         <input type="submit" value="Send" style="background-color: lightgrey; color: white;">
     </form>
 
@@ -38,7 +43,9 @@
 
     <button onclick="document.location='index.html'">Back to Homepage</button>
     <footer>
-        <p><img src="images/unscrupulous.png" width="50px">© 2024 Unscrupulous Web Design</p>
+        <p><img src="images/unscrupulous.png" width="50px" alt="Unscrupulous Company Logo">© 2024 Unscrupulous Web Design</p>
+        <!-- Added alternative text to the image for screen readers. -->
+
     </footer>
 </body>
 </html>
