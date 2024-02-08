@@ -52,7 +52,7 @@ button {
     font-size: 1.2rem; /* Increased font size for general text */
 }
 
-/* Missing focus styles for interactive elements */
+/* Added focus styles for interactive elements */
 a:focus, button:focus, input:focus {
-    /* No focus styles defined */
+    outline: 2px solid blue;
 }
