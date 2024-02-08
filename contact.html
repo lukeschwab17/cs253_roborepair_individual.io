@@ -32,20 +32,19 @@
         <label for="message"> Message: </label>
         <textarea name="message" id="message" placeholder="Type your message here"></textarea> <br>
         <!-- Added label tags to all of the forms -->
-        <input type="submit" value="Send" style="background-color: lightgrey; color: white;">
+        <input type="submit" value="Send"> <!--removed inline styling, now uses style.css-->
     </form>
 
     <div>
         <h2>Visit Us:</h2>
         <p>RoboCare Inc.</p>
-        <p style="color: #888888;">123 Robot Lane, Tech City</p>
+        <p>123 Robot Lane, Tech City</p> <!--Removed inline styling for readiblity-->
     </div>
 
-    <button onclick="document.location='index.html'">Back to Homepage</button>
+    <a href='index.html' >Back to Home</a> <!--Changed the button to link because it takes us to another page-->
     <footer>
         <p><img src="images/unscrupulous.png" width="50px" alt="Unscrupulous Company Logo">© 2024 Unscrupulous Web Design</p>
         <!-- Added alternative text to the image for screen readers. -->
-
     </footer>
 </body>
 </html>
