@@ -17,7 +17,7 @@ header {
 	padding: 10px 0;
 }
 h1 {
-    font-size: 2rem; /* Increased font size for headers */
+    font-size: 2rem; /* Increased font size for h1 headers */
 }
 
 header > nav > ul > li > a { /*New ruleset for navigation links hover color (increased contrast)*/
