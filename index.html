@@ -52,8 +52,9 @@
     
         <form>
             <label for="email">Email:</label> <!--Added label for email input. Useful for screen readers-->
-            <input type="email" name="email" id="email" placeholder="Input your email here"> <!--Changed attributes to more accurately reflect email submission type-->
-            <input type="submit" value="Subscribe">
+            <input type="text" name="email" id="email" placeholder="Input your email here"> <!--Changed attributes to more accurately reflect email submission type-->
+            <label for="submit-email" hidden>Submit:</label>
+            <input type="submit" name="submit-email" id="submit-email" value="Subscribe">
         </form>
     
         <footer>
